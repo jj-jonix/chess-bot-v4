@@ -393,7 +393,7 @@ def main():
     valid_moves = gamestate.get_valid_moves()
     black_resign_image_rect, white_resign_image_rect, draw_image_rect, save_image_rect = get_ingame_icon_rects()
     move_made = False
-    store = Store(DETAILS)
+    #store = Store(DETAILS)
 
     input_text = ''
     input_active = False
