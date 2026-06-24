@@ -297,11 +297,11 @@ class Main_menu:
 
 
 for piece in ['wP','wR','wN','wB','wQ','wK','bP','bR','bN','bB','bQ','bK']:
-    IMAGES[piece] = pygame.transform.scale(pygame.image.load(f'src/{piece}.png'), (SQUARE_SIZE, SQUARE_SIZE))
-black_resign_image = pygame.transform.scale(pygame.image.load('src/resign.png'), (PADDING-5,PADDING-5))
-white_resign_image = pygame.transform.scale(pygame.image.load('src/resign.png'), (PADDING-5,PADDING-5))
-draw_image = pygame.transform.scale(pygame.image.load('src/draw.png'),(PADDING-5,PADDING-5))
-save_image = pygame.transform.scale(pygame.image.load('src/save.png'),(PADDING-5,PADDING-5))
+    IMAGES[piece] = pygame.transform.scale(pygame.image.load(f'{piece}.png'), (SQUARE_SIZE, SQUARE_SIZE))
+black_resign_image = pygame.transform.scale(pygame.image.load('resign.png'), (PADDING-5,PADDING-5))
+white_resign_image = pygame.transform.scale(pygame.image.load('resign.png'), (PADDING-5,PADDING-5))
+draw_image = pygame.transform.scale(pygame.image.load('draw.png'),(PADDING-5,PADDING-5))
+save_image = pygame.transform.scale(pygame.image.load('save.png'),(PADDING-5,PADDING-5))
 def get_ingame_icon_rects():
     black_resign_image_rect = black_resign_image.get_rect(center = (WIN_WIDTH-PADDING//2,WIN_HEIGHT//2 - draw_image.get_height()-50))
     white_resign_image_rect = white_resign_image.get_rect(center = (WIN_WIDTH-PADDING//2,WIN_HEIGHT//2 + draw_image.get_height()+50))
